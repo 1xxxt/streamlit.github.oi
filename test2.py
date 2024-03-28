@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-pmdata=pd.read_csv('D:/geo/3/软件工程和GIS开发/3/实习2/csj_pm25.csv')
+pmdata=pd.read_csv('csj_pm25.csv')
 st.title('长三角PM2.5监测数据')
 with st.expander('显示原始数据'):
     st.dataframe(pmdata)

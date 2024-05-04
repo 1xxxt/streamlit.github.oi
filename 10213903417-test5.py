@@ -28,7 +28,7 @@ with st.form('CGCS2000地理坐标转上海2000投影坐标'):
 
     if st.form_submit_button('提交'):
         sh2000_proj = '+proj=tmerc +lon_0='+str(center_x)+' +x_0='+str(dis_e)+' +y_0='+str(dis_n)            #编写上海2000坐标系的详细编码
-        if select_datum='上海2000坐标(WGS84地球椭球体)':                                                      #选择不同的椭球体就为编码添加不同的信息
+        if select_datum=='上海2000坐标(WGS84地球椭球体)':                                                      #选择不同的椭球体就为编码添加不同的信息
             ellps=' +ellps=WGS84'
         else:
             ellps=' +ellps=IAU76'
